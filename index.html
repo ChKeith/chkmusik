@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charles Keith | ChkMusic</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#0b0b0f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1400&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      padding:20px;
+    }
+
+    .hero{
+      max-width:800px;
+    }
+
+    .hero h1{
+      font-size:70px;
+      font-weight:700;
+      letter-spacing:2px;
+      margin-bottom:10px;
+    }
+
+    .hero h2{
+      font-size:24px;
+      color:#8a8aff;
+      margin-bottom:20px;
+      font-weight:500;
+    }
+
+    .hero p{
+      color:#d6d6d6;
+      line-height:1.8;
+      font-size:17px;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      background:#8a8aff;
+      color:white;
+      text-decoration:none;
+      border-radius:40px;
+      transition:0.3s;
+      font-weight:600;
+    }
+
+    .btn:hover{
+      background:#6d6dff;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:90px 10%;
+    }
+
+    .title{
+      font-size:38px;
+      margin-bottom:20px;
+      text-align:center;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 0 30px rgba(138,138,255,0.2);
+    }
+
+    .about-text p{
+      color:#cccccc;
+      line-height:1.9;
+      margin-bottom:15px;
+    }
+
+    .music-cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:50px;
+    }
+
+    .card{
+      background:#14141d;
+      padding:30px;
+      border-radius:20px;
+      transition:0.3s;
+      border:1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 25px rgba(138,138,255,0.15);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#8a8aff;
+    }
+
+    .card p{
+      color:#cfcfcf;
+      line-height:1.7;
+    }
+
+    .contact{
+      text-align:center;
+      background:#101018;
+      border-top:1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact p{
+      margin-top:15px;
+      color:#cfcfcf;
+      font-size:18px;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      color:#888;
+      background:#09090d;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero h2{
+        font-size:20px;
+      }
+
+      .title{
+        font-size:30px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="hero">
+      <h1>Charles Keith</h1>
+      <h2>ChkMusic • Cinematic & Nostalgia Music</h2>
+
+      <p>
+        Welcome to my musical world.  
+        I create cinematic and nostalgic soundscapes that bring emotions,
+        memories, and imagination into life through music.
+      </p>
+
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="title">About Me</h2>
+
+    <div class="about">
+
+      <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop" alt="music studio">
+
+      <div class="about-text">
+        <p>
+          Hi, I'm <strong>Charles Keith</strong>, also known as 
+          <strong>ChkMusic</strong>.
+        </p>
+
+        <p>
+          I focus on creating cinematic music with nostalgic atmospheres,
+          emotional melodies, and immersive sound design.
+        </p>
+
+        <p>
+          My music is inspired by memories, dreams, night atmospheres,
+          emotional storytelling, and cinematic experiences.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MUSIC STYLE -->
+  <section>
+    <h2 class="title">Music Style</h2>
+
+    <div class="music-cards">
+
+      <div class="card">
+        <h3>Cinematic</h3>
+        <p>
+          Epic and emotional soundtracks inspired by films, stories,
+          and immersive atmospheres.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Nostalgia</h3>
+        <p>
+          Warm melodies and emotional vibes that bring memories and
+          feelings back to life.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ambient</h3>
+        <p>
+          Atmospheric textures and relaxing soundscapes designed
+          for deep listening experiences.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="title">Contact</h2>
+
+    <p>Email: keith.charles6872@gmail.com</p>
+    <p>Spotify Artist: ChkMusic</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Charles Keith / ChkMusic. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
